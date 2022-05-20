@@ -1,5 +1,6 @@
 module "hello_world" {
-  source = "./module/lambda"
+    #source = "./module/lambda"
+  source = "git::https://github.com/rooktechcoop/aws-lambda-module.git?ref=lambda_file_package_modification_v2"
 
   lambda_function_name = "hello_world_v2"
   lambda_code_path     = "${path.module}/module/lambda/examples/hello_world/python/source"
