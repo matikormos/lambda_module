@@ -1,0 +1,21 @@
+#  Local .terraform directories
+**/.terraform/*
+
+# .tfstate files
+*.tfstate
+*.tfstate.*
+
+# .tfvars files
+*.tfvars
+
+# Temporal tf zip files
+terraform/*.zip
+
+# Terraform provider, Terraform tfvars
+terraform/**/provider.tf
+terraform/**/terraform.tfvars
+
+# Crash log files
+crash.log
+
+.terraform.lock.hcl
